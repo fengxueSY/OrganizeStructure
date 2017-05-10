@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "OrganizeController.h"
+#import "SYSearchBar.h"
 
 @interface ViewController ()
 
@@ -16,9 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    SYSearchBar * search  = [[SYSearchBar alloc]initWithFrame:CGRectMake(0, 100, 375, 50)];
+    search.showsCancelButton = YES;
+    [self.view addSubview:search];
 }
 
+- (IBAction)oranizeButton:(id)sender {
+    [[NSUserDefaults standardUserDefaults]removeObjectForKey:@"organizeStructureTitleArray"];
+    OrganizeController * organize = [[OrganizeController alloc]init];
+    [self.navigationController pushViewController:organize animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

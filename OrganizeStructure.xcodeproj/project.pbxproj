@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F20DEA51EBC2B3C00F6EE7B /* SYSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F20DEA41EBC2B3C00F6EE7B /* SYSearchBar.m */; };
 		2F21D2761EB9DC26000E0412 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F21D2751EB9DC26000E0412 /* main.m */; };
 		2F21D2791EB9DC26000E0412 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F21D2781EB9DC26000E0412 /* AppDelegate.m */; };
 		2F21D27C1EB9DC26000E0412 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F21D27B1EB9DC26000E0412 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		2F21D2841EB9DC26000E0412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F21D2821EB9DC26000E0412 /* LaunchScreen.storyboard */; };
 		2F21D28F1EB9DC26000E0412 /* OrganizeStructureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F21D28E1EB9DC26000E0412 /* OrganizeStructureTests.m */; };
 		2F21D29A1EB9DC26000E0412 /* OrganizeStructureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F21D2991EB9DC26000E0412 /* OrganizeStructureUITests.m */; };
+		2F21D2A91EB9DC57000E0412 /* OrganizeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F21D2A81EB9DC57000E0412 /* OrganizeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F20DEA31EBC2B3C00F6EE7B /* SYSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSearchBar.h; sourceTree = "<group>"; };
+		2F20DEA41EBC2B3C00F6EE7B /* SYSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSearchBar.m; sourceTree = "<group>"; };
 		2F21D2711EB9DC26000E0412 /* OrganizeStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrganizeStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F21D2751EB9DC26000E0412 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2F21D2771EB9DC26000E0412 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		2F21D2951EB9DC26000E0412 /* OrganizeStructureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrganizeStructureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F21D2991EB9DC26000E0412 /* OrganizeStructureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganizeStructureUITests.m; sourceTree = "<group>"; };
 		2F21D29B1EB9DC26000E0412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F21D2A71EB9DC57000E0412 /* OrganizeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizeController.h; sourceTree = "<group>"; };
+		2F21D2A81EB9DC57000E0412 /* OrganizeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				2F21D2781EB9DC26000E0412 /* AppDelegate.m */,
 				2F21D27A1EB9DC26000E0412 /* ViewController.h */,
 				2F21D27B1EB9DC26000E0412 /* ViewController.m */,
+				2F20DEA31EBC2B3C00F6EE7B /* SYSearchBar.h */,
+				2F20DEA41EBC2B3C00F6EE7B /* SYSearchBar.m */,
+				2F21D2A71EB9DC57000E0412 /* OrganizeController.h */,
+				2F21D2A81EB9DC57000E0412 /* OrganizeController.m */,
 				2F21D27D1EB9DC26000E0412 /* Main.storyboard */,
 				2F21D2801EB9DC26000E0412 /* Assets.xcassets */,
 				2F21D2821EB9DC26000E0412 /* LaunchScreen.storyboard */,
@@ -276,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F20DEA51EBC2B3C00F6EE7B /* SYSearchBar.m in Sources */,
 				2F21D27C1EB9DC26000E0412 /* ViewController.m in Sources */,
 				2F21D2791EB9DC26000E0412 /* AppDelegate.m in Sources */,
+				2F21D2A91EB9DC57000E0412 /* OrganizeController.m in Sources */,
 				2F21D2761EB9DC26000E0412 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +530,7 @@
 				2F21D2A01EB9DC26000E0412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F21D2A11EB9DC26000E0412 /* Build configuration list for PBXNativeTarget "OrganizeStructureTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +539,7 @@
 				2F21D2A31EB9DC26000E0412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F21D2A41EB9DC26000E0412 /* Build configuration list for PBXNativeTarget "OrganizeStructureUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +548,7 @@
 				2F21D2A61EB9DC26000E0412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
